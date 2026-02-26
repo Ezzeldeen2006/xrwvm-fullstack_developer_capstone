@@ -1,7 +1,78 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .about-banner {
+      background-color: #1a1a2e;
+      color: #fff;
+      padding: 40px 30px;
+      border-radius: 8px 8px 0 0;
+      text-align: center;
+    }
+    .about-banner h1 {
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .about-banner p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .team-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+    .team-card {
+      width: 280px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      overflow: hidden;
+    }
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+    .team-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .team-card .card-body {
+      padding: 20px;
+      text-align: center;
+    }
+    .team-card .title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 2px;
+    }
+    .team-card .role {
+      color: #16813d;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    .team-card .card-text {
+      color: #555;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .team-card .email {
+      color: #0d6efd;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+  </style>
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -24,45 +95,44 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+
+  <div style="width: 85%; margin: auto; margin-top: 40px; margin-bottom: 40px;">
+    <div class="about-banner">
+      <h1>About Us</h1>
+      <p>Welcome to Best Cars Dealership, proudly serving customers across North America since 2005. We specialize in both domestic and imported vehicles, offering a curated selection of new and pre-owned cars at competitive prices. Our commitment to transparency, quality, and customer satisfaction has made us a trusted name in the automotive industry.</p>
+    </div>
+    <div class="team-section">
+      <div class="card team-card">
+        <img class="card-img-top" src="/static/person.png" alt="Sarah Mitchell">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title">Sarah Mitchell</p>
+          <p class="role">Chief Executive Officer</p>
+          <p class="card-text">Sarah founded Best Cars in 2005 with a vision to make car buying simple and honest. She brings over 20 years of automotive industry experience.</p>
+          <a class="email" href="mailto:sarah.mitchell@bestcars.com">sarah.mitchell@bestcars.com</a>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card team-card">
+        <img class="card-img-top" src="/static/person.png" alt="James Rodriguez">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title">James Rodriguez</p>
+          <p class="role">Head of Sales</p>
+          <p class="card-text">James leads our sales team with a customer-first approach. He has helped thousands of families find their perfect vehicle over the past decade.</p>
+          <a class="email" href="mailto:james.rodriguez@bestcars.com">james.rodriguez@bestcars.com</a>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card team-card">
+        <img class="card-img-top" src="/static/person.png" alt="Emily Chen">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title">Emily Chen</p>
+          <p class="role">Service Manager</p>
+          <p class="card-text">Emily oversees our certified service center, ensuring every vehicle meets our rigorous quality standards before reaching the showroom floor.</p>
+          <a class="email" href="mailto:emily.chen@bestcars.com">emily.chen@bestcars.com</a>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
-
+</body>
 </html>

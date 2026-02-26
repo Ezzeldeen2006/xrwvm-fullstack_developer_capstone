@@ -1,0 +1,166 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .contact-container {
+      width: 85%;
+      margin: 40px auto;
+    }
+    .contact-header {
+      background-color: #1a1a2e;
+      color: #fff;
+      padding: 40px 30px;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact-header h1 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .contact-header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .contact-cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .contact-card {
+      width: 260px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+    .contact-card .icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #16813d;
+    }
+    .contact-card h4 {
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 10px;
+    }
+    .contact-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .contact-card a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    .map-section {
+      background-color: #f8f9fa;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .map-section h3 {
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 5px;
+    }
+    .map-section p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .hours-table {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .hours-table td {
+      padding: 8px 15px;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .hours-table td:first-child {
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+    .hours-table td:last-child {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="contact-container">
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>Have a question or want to schedule a test drive? We'd love to hear from you. Reach out through any of the channels below.</p>
+    </div>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="icon">&#9742;</div>
+        <h4>Phone</h4>
+        <p><a href="tel:+14165551234">(416) 555-1234</a></p>
+        <p><a href="tel:+18005559876">1-800-555-9876</a></p>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon">&#9993;</div>
+        <h4>Email</h4>
+        <p><a href="mailto:info@bestcars.com">info@bestcars.com</a></p>
+        <p><a href="mailto:sales@bestcars.com">sales@bestcars.com</a></p>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon">&#9873;</div>
+        <h4>Address</h4>
+        <p>742 Automotive Drive</p>
+        <p>Toronto, ON M5V 2T6</p>
+      </div>
+    </div>
+
+    <div class="map-section">
+      <h3>Business Hours</h3>
+      <p>Visit us during any of our operating hours</p>
+      <table class="hours-table">
+        <tr><td>Monday - Friday</td><td>9:00 AM - 8:00 PM</td></tr>
+        <tr><td>Saturday</td><td>10:00 AM - 6:00 PM</td></tr>
+        <tr><td>Sunday</td><td>11:00 AM - 4:00 PM</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
